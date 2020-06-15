@@ -23,7 +23,7 @@ if (intercept('PUT')) {
     // build path
     $orderId = requiredQueryParam('order');
     $txnId = requiredQueryParam('transaction');
-    $path = '/order/' . $orderId . '/transaction/' . $txnId;
+    $path = 'https://test-nbe.gateway.mastercard.com/api/rest/version/56/merchant/testsdktest/order/nbe00001/transaction/sdknbe00001';
 
     proxyCall($path);
 }
