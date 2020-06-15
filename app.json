@@ -1,8 +1,8 @@
 {
     "name": "Gateway Merchant Server",
     "description": "Sample PHP application for processing mobile SDK transactions on the Gateway",
-    "repository": "https://github.com/khalil57/nbe-sample-php.git",
-    "website": "https://github.com/khalil57/nbe-sample-php",
+    "repository": "https://github.com/khalil57/sdk-merchant-server.git",
+    "website": "https://github.com/khalil57/sdk-merchant-server",
     "env": {
         "GATEWAY_MERCHANT_ID": {
             "required": true,
