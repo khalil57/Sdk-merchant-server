@@ -43,21 +43,3 @@ if (intercept('POST')) {
     // build mobile redirect
     doRedirect("gatewaysdk://3dsecure?acsResult=" . urlencode($response));
 }
-
-?>
-
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <style>
-            body {
-                padding: 2rem;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>3DSecure - Process Issuer Result</h1>
-        <p>This script is used to process the Issuer response during a 3DS transaction on a mobile device.<br/>The url to this page should be provided during <a href="../3DSecure.php">Check 3DS Enrollment</a>.</p>
-        <p>When you provide this page as the 3DSecure.authenticationRedirect.responseUrl parameter, you must include the 3DSecureId as a query param, as illustrated in the above link.</p>
-    </body>
-</html>
