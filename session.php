@@ -20,7 +20,7 @@ include '_bootstrap.php';
 
 // proxy POST requests
 if (intercept('POST')) {
-    $path = '/session';
+    $path = 'https://test-nbe.gateway.mastercard.com/api/rest/version/56/merchant/testsdktest/session';
 
     proxyCall($path);
 }
